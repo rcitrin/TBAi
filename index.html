@@ -84,19 +84,40 @@
             margin: 0 auto;
             line-height: 1.6;
             animation: fadeIn 1s ease 0.5s both;
-        }
+			        }
+		.cards-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+			gap: 1.5rem;
+			margin-top: 4rem;
+			padding: 2rem;
+			max-width: 1050px;
+			margin-left: auto;
+			margin-right: auto;
+			}
 
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 1.5rem;
-            margin-top: 4rem;
-            padding: 2rem;
-            max-width: 1050px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
+		.card:first-child {
+    		text-align: right;
+			}
+		
+		.card:first-child .card-icon {
+		    margin-left: auto;
+		    margin-right: 0;
+			}
+		
+		.card:first-child .btn {
+		    margin-left: auto;
+			}
+		
+		.card:first-child .btn svg {
+		    order: -1; /* Puts arrow on left side */
+		    transform: scaleX(-1); /* Flips arrow to point left */
+			}
+		
+		.card:first-child .btn:hover svg {
+		    transform: scaleX(-1) translateX(-4px); /* Maintains left-pointing on hover */
+			}
+		
         @media (max-width: 768px) {
             .cards-grid {
                 grid-template-columns: 1fr;
