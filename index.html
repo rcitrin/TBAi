@@ -275,17 +275,10 @@
             height: 52px;
             display:flex;
             align-items:center;
-            justify-content:space-between;
+            justify-content:flex-start; /* FIX: keep close button anchored left when title is removed */
             padding: 0 0.9rem 0 1rem;
             background: rgba(255,255,255,0.04);
             border-bottom: 1px solid rgba(255,255,255,0.10);
-        }
-
-        .modal-title{
-            font-size: 0.95rem;
-            font-weight: 650;
-            color: rgba(255,255,255,0.86);
-            letter-spacing: 0.01em;
         }
 
         .close-btn{
