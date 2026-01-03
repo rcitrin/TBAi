@@ -273,14 +273,13 @@
 
         .modal-topbar{
             height: 52px;
-            display:flex;
-            align-items:center;
-            justify-content:flex-start; /* FIX: keep close button anchored left when title is removed */
-            padding: 0 0.9rem 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 1rem;
             background: rgba(255,255,255,0.04);
             border-bottom: 1px solid rgba(255,255,255,0.10);
         }
-
         .close-btn{
             width: 34px;
             height: 34px;
@@ -293,6 +292,7 @@
             justify-content:center;
             transition: transform .16s ease, background .16s ease, border-color .16s ease;
             color: rgba(255,255,255,0.80);
+            margin-left: auto;
         }
 
         .close-btn:hover{
